@@ -37,7 +37,6 @@ h1, h2, h4{
 	line-height: 14.4px;
 }
 .nav ul li{
-	list-style-type: none;
 	float: left;
 	padding-top: 16px;
 }
@@ -79,7 +78,6 @@ h2{
 	margin-top: 13px;
 }
 .aside ul li{
-	list-style-type: none;
 	float: left;
 	padding-top: 11px;
 }
@@ -138,7 +136,6 @@ h2{
 	padding-top: 12px;
 	line-height: 19.2px;
 }
-
 .right-column-block{
 	position: relative;
 }
@@ -276,8 +273,15 @@ h4{
 	float: left;
 	margin-left: 1px;
 }
-.content-menu-blocks > p{
+.content-menu-blocks > p:not(.content-menu-blocks-p){
 	color: #982115;
+	font-size: 12px;
+	line-height: 14.4px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.content-menu-blocks-p{
+	color: #666666;
 	font-size: 12px;
 	line-height: 14.4px;
 	padding-left: 20px;
@@ -318,7 +322,7 @@ h4{
 	padding-top: 30px;
 	line-height: 16px;
 }
-a.anotherA{
+.content-menu-blocks > p a{
 	color: #982014;
 	font-size: 11px;
 }
@@ -326,141 +330,44 @@ a.anotherA{
 	height: 293px;
 	border-top: 3px double #999999;
 }
-#footerMenu1{
-	width: 180px;
-	float: left;
-}
-#footerMenu1 > p{
-	font-size: 13px;
-	line-height: 13px;
-	color: #666666;
-	padding-top: 34px;
-	border-bottom: 1px solid #bcbcbc;
-}
-#footerMenu1 li a{
-	color: #982216;
-	font-size: 12px;
-	line-height: 19.2px;
-	font-family: Verdana;
-}
-#footerMenu1 ul li{
-	list-style-type: none;
-}
-#footerMenu1 ul li:first-child{
-	padding-top: 10px;
-}
-#footerMenu2{
+.menu-footer{
 	width: 180px;
 	float: left;
 	margin-left: 13px;
 }
-#footerMenu2 > p{
+.menu-footer-dop{
+	margin: 0;
+}
+.menu-footer > p{
 	font-size: 13px;
 	line-height: 13px;
 	color: #666666;
 	padding-top: 34px;
 	border-bottom: 1px solid #bcbcbc;
 }
-#footerMenu2 li a{
-	color: #982216;
-	font-size: 12px;
-	line-height: 19.2px;
-	font-family: Verdana;
-}
-#footerMenu2 ul li{
-	list-style-type: none;
-}
-#footerMenu2 ul li:first-child{
-	padding-top: 10px;
-}
-#footerMenu3{
-	width: 180px;
-	float: left;
-	margin-left: 13px;
-}
-#footerMenu3 > p{
+.menu-footer li a{
 	font-size: 13px;
 	line-height: 13px;
-	color: #666666;
-	padding-top: 34px;
-	border-bottom: 1px solid #bcbcbc;
-}
-#footerMenu3 li a{
 	color: #982216;
-	font-size: 12px;
-	line-height: 19.2px;
-	font-family: Verdana;
+	padding-top: 34px;
 }
-#footerMenu3 ul li{
-	list-style-type: none;
-}
-#footerMenu3 ul li:first-child{
+.menu-footer ul li:first-child{
 	padding-top: 10px;
 }
-#footerMenu4{
-	width: 180px;
-	float: left;
-	margin-left: 13px;
-}
-#footerMenu4 > p{
-	font-size: 13px;
-	line-height: 13px;
-	color: #666666;
-	padding-top: 34px;
-	border-bottom: 1px solid #bcbcbc;
-}
-#footerMenu4 li a{
-	color: #982216;
-	font-size: 12px;
-	line-height: 19.2px;
-	font-family: Verdana;
-}
-#footerMenu4 ul li{
-	list-style-type: none;
-}
-#footerMenu4 ul li:first-child{
-	padding-top: 10px;
-}
-#footerMenu5{
-	width: 180px;
-	float: left;
-	margin-left: 13px;
-}
-#footerMenu5 > p{
-	font-size: 13px;
-	line-height: 13px;
-	color: #666666;
-	padding-top: 34px;
-	border-bottom: 1px solid #bcbcbc;
-}
-#footerMenu5 li a{
-	color: #982216;
-	font-size: 12px;
-	line-height: 19.2px;
-	font-family: Verdana;
-}
-#footerMenu5 ul li{
-	list-style-type: none;
-}
-#footerMenu5 ul li:first-child{
-	padding-top: 10px;
-}
-#cop{
+.copyright{
 	width: 960px;
 	height: 84px;
 	border-top: 3px double #999999;
 }
-#cop p.first{
+.copyright p{
 	font-size: 12px;
 	line-height: 12px;
 	color: #787878;
 	padding-top: 35px;
+}
+.copyright p:first-child{
 	float: left;
 }
-#cop p.last{
-	font-size: 12px;
-	line-height: 12px;
-	color: #787878;
+.copyright p:last-child{
 	float: right;
-	padding-top: 35px;
 }
